@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title">
+            Tourist Place List
+        </title>
+        <link rel="stylesheet" href="Tourist Place.css">
+    </head>
+    <body>
+        <div id="placeListPage">
+            <input id="searchBar" type="text" placeholder="Enter name to search">
+            <table id="list">
+                <tr>
+                    <th id="nameHeader">NAME</th>
+                    <th>ADDRESS</th>
+                    <th id="ratingHeader">RATING</th>
+                    <th>PICTURE</th>
+                    <th>ACTION</th>
+                </tr>
+                <tr>
+                    <td>Lalbagh Fort</td>
+                    <td>Lalbagh</td>
+                    <td>1</td>
+                    <td><img src="images/Lalbagh Fort.jfif"></td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mahasthangarh</td>
+                    <td>Comilla</td>
+                    <td>1</td>
+                    <td><img src="images/Mahasthangarh.jpg"></td>
+                    <td>
+                        <button class="update-btn">Update</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>
+            </table>
+            <button id="createBtn">Create New Tourist Place</button>
+        </div>
+        <div id="addPlacePage">
+            <h1>Add a new Tourist Place</h1>
+            <table id="form">
+                <tr>
+                    <td>Name:</td>
+                    <td colspan="2">
+                        <input type="text" id="name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td colspan="2">
+                        <input type="text" id="address">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rating:</td>
+                    <td colspan="2">
+                        <input type="number" value="1" min="1" max="5" id="rating">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Type:</td>
+                    <td colspan="2">
+                        <select id="type" required>
+                            <option>Beach</option>
+                            <option>Hills</option>
+                            <option>Fountain</option>
+                            <option>Landmark</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Picture:</td>
+                    <td colspan="2">
+                        <input type="file" id="img" accept="image/*">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <div class="flex-container">
+                            <button id="submitBtn">Submit</button>
+                            <button id="resetBtn">Reset</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <a id="listPage">Back to Tourist Place List</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="Tourist Place.js"></script>
+    </body>
+</html>
